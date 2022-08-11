@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fund Me App</title>
+    </head>
+    <body>
+        Fund Me - Crowdfunding App
+        <script src="./index.js" type="module">
+            /*async function connect() {
+                //We wrap the code in an async function so it doesn't run everytime we refresh the page
+                if (typeof window.ethereum !== "undefined") {
+                    //We can check for a Metamask wallet with the window.ethereum object
+                    //console.log("I see a Metamask wallet!")
+                    await window.ethereum.request({
+                        method: "eth_requestAccounts",
+                    }) //We try to connect to the Metamask wallet
+                    //console.log("Connected!")
+                    document.getElementById("connectButton").innerHTML =
+                        "Connected!"
+                } else {
+                    //console.log("No Metamask installed")
+                    document.getElementById("connectButton").innerHTML =
+                        "No wallet detected"
+                }
+            }*/
+        </script>
+        <button id="connectButton">Connect</button>
+        <button id="balanceButton">Get Balance</button>
+        <button id="withdrawButton">Withdraw</button>
+        <!-- Form to input ether fund amount -->
+        <button id="fundButton">Fund</button>
+        <label for="ethAmount">ETH amount</label>
+        <!-- this is basically a "button" to click that takes you to the input form-->
+        <input id="ethAmount" placeholder="0.1" />
+        <!-- End of form -->
+    </body>
+</html>
